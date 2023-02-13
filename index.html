@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet NSI Voitures</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1798032c51.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <!--header-->
     <header>
+        <!--menu responsive-->
+        <div class="menu_toggle">
+            <span></span>
+        </div>
         <div class="logo">
             <p><span>Projet</span>NSI</p>
         </div>
         <ul class="menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Vehicules</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#cars">Vehicules</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="login_btn">LOGIN</button>
     </header>
@@ -108,15 +113,75 @@
                     <span class="prix">100 000$</span>
                     <a href="#">Acheter maintenant</a>
                 </li>
-                
-
-
             </ul>
         </div>
+    </section>
+    <!-- section services -->
 
-
+    <section id="services">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <i class="fa-regular fa-screwdriver-wrench"></i>
+                <h3>Depanage</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quae a voluptatum, ut accusamus maxime sapiente amet ad doloribus necessitatibus blanditiis tempore architecto adipisci voluptas! N</p>
+                <a href="#" class="read_more">Lire plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-regular fa-screwdriver-wrench"></i>
+                <h3>Depanage</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quae a voluptatum, ut accusamus maxime sapiente amet ad doloribus necessitatibus blanditiis tempore architecto adipisci voluptas! N</p>
+                <a href="#" class="read_more">Lire plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-regular fa-screwdriver-wrench"></i>
+                <h3>Depanage</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quae a voluptatum, ut accusamus maxime sapiente amet ad doloribus necessitatibus blanditiis tempore architecto adipisci voluptas! N</p>
+                <a href="#" class="read_more">Lire plus</a>
+            </div>
+        </div>
     </section>
 
+    <!--section contact -->
 
+    <section id="contact">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7522731704134!2d5.451345815737493!3d43.52835836851199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c98dbe48f74c2f%3A0x2137620bedbe9f7b!2zTHljw6llIGR1IFNhY3LDqS1DxZN1cg!5e0!3m2!1sfr!2sfr!4v1676287222170!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text"placeholder="Nom">
+                    <input type="email"placeholder="Adresse email">
+                    <input type="text"placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Louis Lemarchal & Maxence Haller 2023</p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+
+        }
+    </script>
 </body>
 </html>
