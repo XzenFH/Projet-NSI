@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    z-index: 2;
 }
 .bloc video {
     position: absolute;
@@ -59,6 +60,33 @@ header .logo {
     font-size: 25px;
     font-weight: bold;   
 }
+body {
+    background-color: #ffffff; /* Couleur de fond par défaut */
+    color: #000000; /* Couleur de texte par défaut */
+
+  }
+  
+  body.dark-mode {
+    background-color: #222222; /* Couleur de fond en mode sombre */
+    color: #ffffff; /* Couleur de texte en mode sombre */
+    
+  }
+  
+  #mode-toggle {
+    background-color: #ffffff; /* Couleur de fond du bouton par défaut */
+    color: #000000; /* Couleur de texte du bouton par défaut */
+    border: 1px solid #000000; /* Bordure du bouton par défaut */
+    padding: 10px; /* Espacement interne du bouton */
+    
+  }
+  
+  #mode-toggle.dark-mode {
+    background-color: #222222; /* Couleur de fond du bouton en mode sombre */
+    color: #ffffff; /* Couleur de texte du bouton en mode sombre */
+    border: 1px solid #ffffff; /* Bordure du bouton en mode sombre */
+    
+  }
+  
 header .logo span {
     color: black;
 }
@@ -83,6 +111,9 @@ header button {
     cursor: pointer;
     color: #fff;
     padding: 5px 20px;
+    position: relative;
+    align-items: left;
+    padding: 10px 10px;
     
 }
 
@@ -114,7 +145,7 @@ header button {
     margin-bottom: 10px;
 }
 #home .left h1 span {
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 #home .left p {
     margin-bottom: 30px;
@@ -125,11 +156,11 @@ header button {
     background-color: blue;
     padding: 10px 20px;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     transition: 0.5s;    
 }
 #home .left a:hover {
-    background-color: black;   
+    background-color: rgb(0, 0, 0);   
 }
 #home .right {
     width: 50%;
@@ -217,7 +248,7 @@ header button {
     width: 100%;
     height: 60%;
     margin-bottom: 5px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .images li div img {
     height: 100%;
@@ -228,11 +259,11 @@ header button {
     margin: auto;
 }
 .images li span {
-    color: black;
+    color: rgb(109, 109, 160);
     font-size: 17px;
 }
 #cars li span.prix {
-    color: black;
+    color: rgb(109, 109, 160);
     font-weight: bold;
     margin-bottom: 10px;
 }
